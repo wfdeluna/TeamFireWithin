@@ -218,6 +218,7 @@ with sd.InputStream(device=DEVICE_INDEX, channels=1, samplerate=fs, blocksize=N)
 
             #reposition if more than 3 rotations and save .csv
             elif position >= 48:
+                position = 12
                 print(f"Repositioning")
 
                 if log_buffer:
